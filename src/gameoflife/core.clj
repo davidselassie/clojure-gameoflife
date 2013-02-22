@@ -10,7 +10,9 @@
 	"Turns :on each of the cells specified as [y, x] coordinates."
 	[board living-cells]
 	(reduce (fn [board coordinates]
-		; 
+		; coordinates is a vector. Use that vector as a nested lookup in
+		; board, and set that to :on. This is sort of like
+		; yelp_lib.set_deep_by_key.
 		(assoc-in board coordinates :on))
 	board
 	living-cells))
