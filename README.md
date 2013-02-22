@@ -1,6 +1,6 @@
 # gameoflife
 
-An annotated implementation of the Game of Life example from Clojure Programming by Kmerick, Carper, and Grand.
+An annotated implementation of the Game of Life example from Clojure Programming by Emerick, Carper, and Grand.
 
 ## Usage
 
