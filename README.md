@@ -1,13 +1,7 @@
 # gameoflife
 
-A Clojure library designed to ... well, that part is up to you.
+An annotated implementation of the Game of Life example from Clojure Programming by Kmerick, Carper, and Grand.
 
 ## Usage
 
-FIXME
-
-## License
-
-Copyright © 2013 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+Check out `glide-edges` and `glide-sphere`.
