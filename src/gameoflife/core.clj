@@ -76,6 +76,7 @@
 
 (defn sphere-neighbours
 	"Returns neighbors on a 2D square grid that wraps to 0 at x = width and y = height."
+	;;; WARNING: As we saw today. Something is wrong here... Glider explodes.
 	[w h]
 	(fn [[x y]]
 		(for [dx [-1 0 1] dy [-1 0 1] :when (not= 0 dx dy)]
