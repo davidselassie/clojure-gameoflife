@@ -85,5 +85,12 @@
 ; make an 8x8 stepper with usual rules except in a spherical space.
 (def sphere-stepper (stepper (sphere-neighbours 8 8) #(= % 2) #(= % 3)))
 
-(defn -main []
-	(pprint (populate (empty-board 8 8) (step glider))))
+(defn glide-edges []
+	(doseq [i-glider (iterate step glider)]
+		(pprint (populate (empty-board 8 8) i-glider))))
+
+(defn glide-sphere []
+	(doseq [i-glider (iterate sphere-stepper glider)]
+		(pprint (populate (empty-board 8 8) i-glider))))
+
+(defn -main [])
