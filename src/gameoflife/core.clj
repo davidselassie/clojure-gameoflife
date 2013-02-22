@@ -57,7 +57,8 @@
 	(doseq [row matrix]
 		(doseq [item row]
 			(print item " "))
-		(print "\n")))
+		(print "\n"))
+	(print "\n"))
 
 (defn print-live
 	"Prints the world given."
